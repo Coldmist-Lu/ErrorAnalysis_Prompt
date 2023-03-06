@@ -1,0 +1,7 @@
+Source: <SRC>
+Reference: <REF>
+Translation: <TGT>
+Based on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation. 
+Count the number of major and minor errors and compute the final score for this translation. Deduct 5 points for each major error. Deduct 1 point for each minor error. If the translation has no errors, its score will be 0.
+
+<RESPONSE>

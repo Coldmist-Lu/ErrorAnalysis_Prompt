@@ -1,0 +1,35 @@
+Here is an example template:
+
+Q:
+Source: 中新网北京9月27日电 (记者 杜燕)为加强节前市场监管执法，北京市市场监管局在国庆节前夕检查各类经营主体2000余户。
+Reference: Chinanews.com Report on September 27 in Beijing (Journalist Du Yan) The Beijing Administration for Market Regulation inspected more than 2,000 operating entities of different types before the National Day holiday to strengthen pre-holiday market regulation and law enforcement.
+Translation: BEIJING, Sept. 27 (Reporter Du Yan) In order to strengthen market supervision and law enforcement before the festival, the Beijing Municipal Market Supervision Bureau inspected more than 2,000 households of various business subjects on the eve of the National Day.
+Based on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation. 
+
+A: 
+Major errors:
+(1) “BEIJING” – Omission
+(2) “subjects” – Mistranslation
+Minor errors:
+(1) “households of various” – Mistranslation
+(2) “festival” – Mistranslation
+(3) “supervision” – Mistranslation
+(4) “Beijing Municipal Market Supervision Bureau” – Inappropriate for context
+(5) “BEIJING” – Spelling
+
+Use the template above to answer the following question:
+
+Q:
+Source: <SRC>
+Reference: <REF>
+Translation: <TGT>
+Based on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation. 
+
+A: 
+<RESPONSE>
+
+Q:
+Count the number of major and minor errors identified in your last response and compute the final score for this translation. Deduct 5 points for each major error. Deduct 1 point for each minor error. If the translation has no errors, its score will be 0.
+
+A: 
+<RESPONSE>
