@@ -7,7 +7,7 @@ We anticipate that this report will shed new light on advancing the field of tra
 
 This repository releases the testsets and the scores evaluated by text-davinci-003 and [ChatGPT](https://chat.openai.com/chat),  for the replication of the study.
 
-## Data and Predictions
+## Data and Evaluations
 
 For each language pair, we divide the segments from WMT20 testset into four groups based on the number of tokens they contain (15-24, 25-34, 35-44, 45-54). We randomly sample 10 segments from each group and form a new dataset containing 40 segments. We utilize Multidimentional Quality Metric (MQM) as human evaluation. The test data and its corresponding evaluation scores can be obtained in "[./data](./data/)".
 
