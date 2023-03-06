@@ -31,7 +31,7 @@ An overview of our error analysis prompting. Detailed prompt contexts can be obt
 
 ## Results and Findings
 
-1. Our proposed EA Prompting outperforms standard prompting at the segment level, achieving human-like evaluations at both the system level and segment level.
+1. :smiley: Our proposed EA Prompting outperforms standard prompting at the segment level, achieving human-like evaluations at both the system level and segment level.
 
    > System & Segment level performance on our testset:
 
@@ -41,7 +41,7 @@ An overview of our error analysis prompting. Detailed prompt contexts can be obt
 
 
 
-2. When designing prompts, itemized responses are better than lengthy and detailed explanations of errors. Moreover, splitting the instruction into two identifying errors and scoring translation can improve evaluation stability.
+2. :eyes: When designing prompts, itemized responses are better than lengthy and detailed explanations of errors. Moreover, splitting the instruction into two identifying errors and scoring translation can improve evaluation stability.
 
    > An comparison on different prompt designs, and their prompt contexts:
 
@@ -55,14 +55,14 @@ An overview of our error analysis prompting. Detailed prompt contexts can be obt
 
 
 
-3. The boosted performance from EA prompting is observed in the zero-shot scenario on text-davinci-003 rather than in the few-shot scenario, which indicates that we need to adjust our settings when utilizing other GPT models.
-4. Despite its good performance, we show that ChatGPT is NOT a stable evaluator and may score the same translation differently.
+3. :neutral_face: The boosted performance from EA prompting is observed in the zero-shot scenario on text-davinci-003 rather than in the few-shot scenario, which indicates that we need to adjust our settings when utilizing other GPT models.
+4. :exclamation: Despite its good performance, we show that ChatGPT is NOT a stable evaluator and may score the same translation differently.
 
 <div align="center">
     <img width="25%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/unstable.png">
 </div>
 
-5. It is NOT advisable to combine multiple translations into a single query input, as ChatGPT has a preference for former translations. 
+5. :exclamation: It is NOT advisable to combine multiple translations into a single query input, as ChatGPT has a preference for former translations. 
 
 <div align="center">
     <img width="100%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/input%20bias.png">
