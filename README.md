@@ -41,7 +41,7 @@ An overview of our error analysis prompting. Detailed prompt contexts can be obt
 
 
 
-2. :eyes: When designing prompts, itemized responses are better than lengthy and detailed explanations of errors. Moreover, splitting the instruction into two identifying errors and scoring translation can improve evaluation stability.
+2. :thinking: When designing prompts, itemized responses are better than lengthy and detailed explanations of errors. Moreover, splitting the instruction into two identifying errors and scoring translation can improve evaluation stability.
 
    > An comparison on different prompt designs, and their prompt contexts:
 
