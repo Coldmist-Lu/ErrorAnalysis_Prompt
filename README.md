@@ -2,7 +2,7 @@
 
 <b>Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT</b>. ([Full report](https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/report.pdf))
 
-This repository releases the testsets and the scores evaluated by <i>text-davinci-003</i> and [<i>ChatGPT<i>](https://chat.openai.com/chat),  for the replication of the study.
+This repository releases the testsets and the scores evaluated by text-davinci-003 and [ChatGPT](https://chat.openai.com/chat),  for the replication of the study.
 
 ## Abstract
 
