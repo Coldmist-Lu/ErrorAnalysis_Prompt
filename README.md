@@ -1,4 +1,4 @@
-# Error Analysis Prompt for Translation Evaluation in ChatGPT
+# ErrorAnalysis Prompt for MT Evaluation in ChatGPT
 
 <b>Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT</b>. ([Full report](https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/report.pdf))
 
