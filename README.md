@@ -1,8 +1,8 @@
-# ErrorAnalysis_Prompt
+# Error Analysis Prompt for Translation Evaluation in ChatGPT
 
 <b>Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT</b>. ([Full report](https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/report.pdf))
 
-This repository releases the testsets and the scores evaluated by text-davinci-003 and [ChatGPT](https://chat.openai.com/chat),  for the replication of the study.
+This repository releases the testsets and the scores evaluated by <i>text-davinci-003</i> and [<i>ChatGPT<i>](https://chat.openai.com/chat),  for the replication of the study.
 
 ## Abstract
 
@@ -31,7 +31,7 @@ An overview of our error analysis prompting. Detailed prompt contexts can be obt
 
 ## Results and Findings
 
-1. :slightly_smiling_face: Our proposed EA Prompting outperforms standard prompting at the segment level, achieving human-like evaluations at both the system level and segment level.
+1. :slightly_smiling_face: Our EA Prompting outperforms standard prompting at the segment level, achieving human-like evaluations at both the system level and segment level.
 
    > System & Segment level performance on our testset:
 
@@ -74,7 +74,7 @@ Please refer to our full [report](https://github.com/Coldmist-Lu/ErrorAnalysis_P
 If you find this work helpful, please consider citing as follows:  
 
 ```ruby
-@article{lu2023chat,
+@article{Lu2023EAPrompt,
   title={Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT},
   author={Lu, Qingyu and Qiu, Baopu and Ding, Liang and Xie, Liping and Tao, Dacheng},
   journal={arXiv preprint},
