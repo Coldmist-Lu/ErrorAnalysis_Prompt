@@ -31,7 +31,7 @@ An overview of our error analysis prompting. Detailed prompt contexts can be obt
 
 ## Results and Findings
 
-1. :smiley: Our proposed EA Prompting outperforms standard prompting at the segment level, achieving human-like evaluations at both the system level and segment level.
+1. :slightly_smiling_face: Our proposed EA Prompting outperforms standard prompting at the segment level, achieving human-like evaluations at both the system level and segment level.
 
    > System & Segment level performance on our testset:
 
