@@ -1,0 +1,66 @@
+[
+    [
+        {
+            "role": "system",
+            "name": "example_user",
+            "content": "Source: 中新网北京9月27日电 (记者 杜燕)为加强节前市场监管执法，北京市市场监管局在国庆节前夕检查各类经营主体2000余户。\nReference: Chinanews.com Report on September 27 in Beijing (Journalist Du Yan) The Beijing Administration for Market Regulation inspected more than 2,000 operating entities of different types before the National Day holiday to strengthen pre-holiday market regulation and law enforcement.\nTranslation: BEIJING, Sept. 27 (Reporter Du Yan) In order to strengthen market supervision and law enforcement before the festival, the Beijing Municipal Market Supervision Bureau inspected more than 2,000 households of various business subjects on the eve of the National Day.\nBased on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation."
+        },
+        {
+            "role": "system",
+            "name": "example_assistant",
+            "content": "Major errors:\n(1) “BEIJING” – Omission\n(2) “subjects” – Mistranslation\nMinor errors:\n(1) “households of various” – Mistranslation\n(2) “festival” – Mistranslation\n(3) “supervision” – Mistranslation\n(4) “Beijing Municipal Market Supervision Bureau” – Inappropriate for context\n(5) “BEIJING” – Spelling'"
+        },
+        {
+            "role": "user",
+            "content": "Source: 国有企业和优势民营企业走进赣南革命老区。\nReference: State-owned enterprises and advantageous private enterprises entered the revolutionary base area of south Jiangxi.\nTranslation: State-owned enterprises and advantageous private enterprises enter the old revolutionary base areas of southern Jiangxi.\nBased on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "name": "example_user",
+            "content": "Source: 中新网北京9月27日电 (记者 杜燕)为加强节前市场监管执法，北京市市场监管局在国庆节前夕检查各类经营主体2000余户。\nReference: Chinanews.com Report on September 27 in Beijing (Journalist Du Yan) The Beijing Administration for Market Regulation inspected more than 2,000 operating entities of different types before the National Day holiday to strengthen pre-holiday market regulation and law enforcement.\nTranslation: BEIJING, Sept. 27 (Reporter Du Yan) In order to strengthen market supervision and law enforcement before the festival, the Beijing Municipal Market Supervision Bureau inspected more than 2,000 households of various business subjects on the eve of the National Day.\nBased on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation."
+        },
+        {
+            "role": "system",
+            "name": "example_assistant",
+            "content": "Major errors:\n(1) “BEIJING” – Omission\n(2) “subjects” – Mistranslation\nMinor errors:\n(1) “households of various” – Mistranslation\n(2) “festival” – Mistranslation\n(3) “supervision” – Mistranslation\n(4) “Beijing Municipal Market Supervision Bureau” – Inappropriate for context\n(5) “BEIJING” – Spelling'"
+        },
+        {
+            "role": "user",
+            "content": "Source: 9月26日至27日，为深化拓展“不忘初心、牢记使命”主题教育成果，中央军民融合办、国家国防科工局、全国工商联联合组织“国有企业和优势民营企业走进赣南革命老区”调研活动，重温革命历史，追寻红色足迹，传承红色基因，开展相关企业与赣州市的需求对接，促进革命老区加快发展。\nReference: From September 26 to 27, in order to deepen and expand the educational achievements of the theme of “Remain true to our original aspiration and keep our mission firmly in mind”, the Central Military-Civilian Integration Office, the State Administration of Science and Industry for National Defense, and the All-China Federation of Industry and Commerce jointly organized the research event of “state-owned enterprises and advantageous private enterprises entering the revolutionary base areas in southern Jiangxi\" to review the history of the revolution, follow the red footprints, and pass on the red genes, thus the purpose of this activity is to interface with the needs of related enterprises and Ganzhou City and to accelerate the development of revolutionary areas.\nTranslation: From September 26 to 27, in order to deepen and expand the educational achievements of the theme \"Remember the original intention and remember the mission\" the Central Civil-Military Integration Office, the National Defense Science and Industry Bureau and the All-China Federation of Industry and Commerce jointly organized the research activity \"State-owned enterprises and advantageous private enterprises into the old revolutionary base areas of southern Jiangxi\" to revisit the history of the revolution, pursue the red footprint, inherit the red gene, carry out the needs of relevant enterprises and Ganzhou City, and promote the accelerated development of the old revolutionary base areas.\nBased on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "name": "example_user",
+            "content": "Source: 中新网北京9月27日电 (记者 杜燕)为加强节前市场监管执法，北京市市场监管局在国庆节前夕检查各类经营主体2000余户。\nReference: Chinanews.com Report on September 27 in Beijing (Journalist Du Yan) The Beijing Administration for Market Regulation inspected more than 2,000 operating entities of different types before the National Day holiday to strengthen pre-holiday market regulation and law enforcement.\nTranslation: BEIJING, Sept. 27 (Reporter Du Yan) In order to strengthen market supervision and law enforcement before the festival, the Beijing Municipal Market Supervision Bureau inspected more than 2,000 households of various business subjects on the eve of the National Day.\nBased on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation."
+        },
+        {
+            "role": "system",
+            "name": "example_assistant",
+            "content": "Major errors:\n(1) “BEIJING” – Omission\n(2) “subjects” – Mistranslation\nMinor errors:\n(1) “households of various” – Mistranslation\n(2) “festival” – Mistranslation\n(3) “supervision” – Mistranslation\n(4) “Beijing Municipal Market Supervision Bureau” – Inappropriate for context\n(5) “BEIJING” – Spelling'"
+        },
+        {
+            "role": "user",
+            "content": "Source: 中央军民融合办常务副主任金壮龙，中央统战部副部长、全国工商联党组书记、常务副主席徐乐江，国家国防科工局局长张克俭，江西省委副书记、赣州市委书记李炳军等参加了调研。\nReference: Jin Zhuanglong, executive deputy director of the Central Military-Civilian Integration Office, Xu Lejiang, deputy minister of the United Front Work Department of the CPC Central Committee, secretary of the CPC leading party group and executive vice chairman of the All-China Federation of Industry and Commerce, Zhang Kejian, director of the State Administration of Science and Industry for National Defense, Li Bingjun, deputy secretary of the Jiangxi Provincial Party Committee and secretary of the Ganzhou Municipal Party Committee, and other officials attended the survey.\nTranslation: Jin Zhuanglong, Deputy Director of the Central Civil-Military Integration Office, Xu Lejiang, Deputy Minister of the United Front Work Department of the Central Committee, Party Secretary and Deputy Chairman of the All-China Federation of Industry and Commerce, Zhang Kejian, Director of the National Defense Science and Industry Bureau, Li Bingjun, Deputy Secretary of the Jiangxi Provincial Committee and Party Secretary of Ganzhou, participated in the research.\nBased on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "name": "example_user",
+            "content": "Source: 中新网北京9月27日电 (记者 杜燕)为加强节前市场监管执法，北京市市场监管局在国庆节前夕检查各类经营主体2000余户。\nReference: Chinanews.com Report on September 27 in Beijing (Journalist Du Yan) The Beijing Administration for Market Regulation inspected more than 2,000 operating entities of different types before the National Day holiday to strengthen pre-holiday market regulation and law enforcement.\nTranslation: BEIJING, Sept. 27 (Reporter Du Yan) In order to strengthen market supervision and law enforcement before the festival, the Beijing Municipal Market Supervision Bureau inspected more than 2,000 households of various business subjects on the eve of the National Day.\nBased on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation."
+        },
+        {
+            "role": "system",
+            "name": "example_assistant",
+            "content": "Major errors:\n(1) “BEIJING” – Omission\n(2) “subjects” – Mistranslation\nMinor errors:\n(1) “households of various” – Mistranslation\n(2) “festival” – Mistranslation\n(3) “supervision” – Mistranslation\n(4) “Beijing Municipal Market Supervision Bureau” – Inappropriate for context\n(5) “BEIJING” – Spelling'"
+        },
+        {
+            "role": "user",
+            "content": "Source: 参加调研活动的企业有中国航天科技集团有限公司等8家军工集团公司、湖南稀土金属材料研究院等10家民口国有企业、研祥集团等15家优势民营企业。\nReference: The enterprises participating in the survey included 8 military industrial corporations such as the China Aerospace Science and Technology Corporation, 10 private state-owned enterprises such as Hunan Rare Earth Metal Materials Research Institute, and 15 advantageous private enterprises such as the Yanxiang Group.\nTranslation: The enterprises participating in the research activities include 8 military industrial groups such as China Aerospace Science and Technology Group Co., Ltd., 10 Minkou state-owned enterprises such as Hunan Rare Earth Metal Materials Research Institute, and 15 advantageous private enterprises such as Research Xiang Group.\nBased on the given source and reference, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation."
+        }
+    ]
+]

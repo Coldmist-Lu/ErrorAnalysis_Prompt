@@ -1,0 +1,18 @@
+Source: They were addressed to her son, who has autism and lives in a private care facility, she said. But instead of her son's name inside when you opened them, the letters said Dear Maine's Department of Health and Human Services -- in Cincinnati, she told local media.<REF>
+Reference: Sie seien an ihren Sohn adressiert, der an Autismus leidet und in einer privaten Pflegeeinrichtung lebt, sagte sie. Aber als Sie die Briefe öffnete, stand darin nicht der Name ihres Sohnes, sondern sie waren an das Gesundheitsministerium von Maine gerichtet, in Cincinnati, wie sie den lokalen Medien sagte.</REF>
+Translation: Sie wurden an ihren Sohn gerichtet, der Autismus hat und in einer privaten Pflegeeinrichtung lebt, sagte sie. Aber anstelle des Namens ihres Sohnes im Inneren, als Sie sie öffneten, sagten die Briefe Dear Maine 's Department of Health and Human Services -- in Cincinnati, sagte sie den lokalen Medien.
+Based on the given source<REF> and reference</REF>, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation.
+
+Major errors:
+(1) “Sie” – Mistranslation
+(2) “Dear Maine 's Department of Health and Human Services” – Untranslated text
+Minor errors:
+(1) “sagten” – Mistranslation
+(2) “im Inneren” – Mistranslation
+(3) “Briefe ,,” – Omission
+(4) “wurden” – Grammar
+(5) “im Inneren, als Sie sie öffneten, sagten die Briefe” – Awkward Style
+
+Based on the given source<REF> and reference</REF>, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation.
+
+Based on the above error information, Output 2 numbers ONLY with the format: "x, x", indicating the number of major and minor errors. DO NOT ADD other information!

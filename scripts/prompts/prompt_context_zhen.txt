@@ -1,0 +1,18 @@
+Source: 中新网北京9月27日电 (记者 杜燕)为加强节前市场监管执法，北京市市场监管局在国庆节前夕检查各类经营主体2000余户。<REF>
+Reference: Chinanews.com Report on September 27 in Beijing (Journalist Du Yan) The Beijing Administration for Market Regulation inspected more than 2,000 operating entities of different types before the National Day holiday to strengthen pre-holiday market regulation and law enforcement.</REF>
+Translation: BEIJING, Sept. 27 (Reporter Du Yan) In order to strengthen market supervision and law enforcement before the festival, the Beijing Municipal Market Supervision Bureau inspected more than 2,000 households of various business subjects on the eve of the National Day.
+Based on the given source<REF> and reference</REF>, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation.
+
+Major errors:
+(1) “BEIJING” – Omission
+(2) “subjects” – Mistranslation
+Minor errors:
+(1) “households of various” – Mistranslation
+(2) “festival” – Mistranslation
+(3) “supervision” – Mistranslation
+(4) “Beijing Municipal Market Supervision Bureau” – Inappropriate for context
+(5) “BEIJING” – Spelling'
+
+Based on the given source<REF> and reference</REF>, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation.
+
+Based on the above error information, Output 2 numbers ONLY with the format: "x, x", indicating the number of major and minor errors. DO NOT ADD other information!

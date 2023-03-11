@@ -1,0 +1,17 @@
+Source: Experience fast-paced, action-packed combat, hunt monsters and huge bosses, fight with friends in a guild to siege nodes and castles, and train in a variety of life skills such as fishing, trading, crafting, cooking, sailing, and much more!<REF>
+Reference: Опробуйте быстроразвивающийся насыщенный событиями бой, охоту на монстров и огромных боссов, сражайтесь с друзьями в гильдии, чтобы осаждать центры и замки, а также тренируйте множество жизненных навыков, таких как рыболовство, торговля, создание предметов, готовка, мореходство и многие другие!</REF>
+Translation: Испытайте быстро развивающийся, насыщенный бой, охотитесь на монстров и огромных боссов, сражайтесь с друзьями в гильдии, чтобы осадить узлы и замки, и тренируйтесь в различных жизненных навыках, таких как рыбалка, торговля, крафтинг, приготовление пищи, парусный спорт и многое другое!
+Based on the given source<REF> and reference</REF>, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation.
+
+Major errors:
+(1) "Испытайте" – Inconsistency
+(2) "охотитесь" – Inconsistency
+Minor errors:
+(1) "таких как" – Agreement
+(2) "многое другое” – Agreement
+(3) "узлы" – Mistranslation
+(4) "парусный спорт" – Mistranslation
+
+Based on the given source<REF> and reference</REF>, identify the major and minor errors in this translation. Note that Major errors refer to actual translation or grammatical errors, and Minor errors refer to smaller imperfections, and purely subjective opinions about the translation.
+
+Based on the above error information, Output 2 numbers ONLY with the format: "x, x", indicating the number of major and minor errors. DO NOT ADD other information!

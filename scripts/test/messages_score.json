@@ -1,0 +1,26 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "There are no major errors in this translation. \n\nMinor errors:\n(1) \"old\" - Mistranslation\n(2) \"south\" - Mistranslation\nBased on the above error information, Output 2 numbers ONLY with the format: \"x, x\", indicating the number of major and minor errors. DO NOT ADD other information!"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Major errors:\n(1) \"Central Military-Civilian Integration Office\" - Mistranslation\n(2) \"State Administration of Science and Industry for National Defense\" - Mistranslation\n(3) \"revolutionary base areas\" - Mistranslation\n(4) \"interface\" - Mistranslation\n\nMinor errors:\n(1) \"Remain true to our original aspiration and keep our mission firmly in mind\" - Mistranslation\n(2) \"advantageous private enterprises\" - Mistranslation\n(3) \"review the history of the revolution\" - Mistranslation\n(4) \"pass on the red genes\" - Mistranslation\n(5) \"related enterprises\" - Mistranslation\n(6) \"revolutionary areas\" - Mistranslation\nBased on the above error information, Output 2 numbers ONLY with the format: \"x, x\", indicating the number of major and minor errors. DO NOT ADD other information!"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "There are no major errors in the translation.\n\nMinor errors:\n(1) \"Deputy Director\" - Mistranslation of \"executive deputy director\"\n(2) \"United Front Work Department of the Central Committee\" - Omission of \"CPC\"\n(3) \"Party Secretary\" - Mistranslation of \"secretary of the CPC leading party group\"\n(4) \"National Defense Science and Industry Bureau\" - Mistranslation of \"State Administration of Science and Industry for National Defense\"\n(5) \"Jiangxi Provincial Committee\" - Mistranslation of \"Jiangxi Provincial Party Committee\"\n(6) \"research\" - Mistranslation of \"survey\"\nBased on the above error information, Output 2 numbers ONLY with the format: \"x, x\", indicating the number of major and minor errors. DO NOT ADD other information!"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Major errors:\n(1) \"Minkou\" - Mistranslation\n(2) \"Research Xiang Group\" - Mistranslation\nMinor errors:\n(1) \"research activities\" - Mistranslation\n(2) \"groups\" - Mistranslation\n(3) \"China Aerospace Science and Technology Group Co., Ltd.\" - Omission\n(4) \"Hunan Rare Earth Metal Materials Research Institute\" - Inappropriate for context\n(5) \"Yanxiang Group\" - Spelling\nBased on the above error information, Output 2 numbers ONLY with the format: \"x, x\", indicating the number of major and minor errors. DO NOT ADD other information!"
+        }
+    ]
+]
