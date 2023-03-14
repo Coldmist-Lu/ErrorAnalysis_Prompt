@@ -68,7 +68,7 @@ An overview of our error analysis prompting. Detailed prompt contexts can be obt
     <img width="100%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/input%20bias.png">
 </div>
 
-Please refer to our full [report](https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/report.pdf) for more details.
+Please refer to our full [report](https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/report.pdf) & [ResearchGate preprint](https://www.researchgate.net/publication/369198389_Error_Analysis_Prompting_Enables_Human-Like_Translation_Evaluation_in_Large_Language_Models_A_Case_Study_on_ChatGPT) for more details.
 
 ## Citation
 If you find this work helpful, please consider citing as follows:  
@@ -77,7 +77,8 @@ If you find this work helpful, please consider citing as follows:
 @article{Lu2023EAPrompt,
   title={Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT},
   author={Lu, Qingyu and Qiu, Baopu and Ding, Liang and Xie, Liping and Tao, Dacheng},
-  journal={arXiv preprint},
+  journal={ResearchGate preprint},
+  doi={10.13140/RG.2.2.17706.08647},
   year={2023}
 }
 ```
