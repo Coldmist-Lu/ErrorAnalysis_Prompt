@@ -1,6 +1,6 @@
 # ErrorAnalysis Prompt for MT Evaluation in ChatGPT
 
-<b>Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT</b>. ([Full report](https://doi.org/10.13140/RG.2.2.17706.08647))
+<b>Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT</b>. ([Full report](https://arxiv.org/pdf/2303.13809.pdf))
 
 This repository releases the testsets and the scores evaluated by text-davinci-003 and [ChatGPT](https://chat.openai.com/chat),  for the replication of the study.
 
@@ -68,7 +68,7 @@ An overview of our error analysis prompting. Detailed prompt contexts can be obt
     <img width="100%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/input%20bias.png">
 </div>
 
-Please refer to our full [report](https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/report.pdf) & [ResearchGate preprint](https://www.researchgate.net/publication/369198389_Error_Analysis_Prompting_Enables_Human-Like_Translation_Evaluation_in_Large_Language_Models_A_Case_Study_on_ChatGPT) for more details.
+Please refer to our full [report](https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/report.pdf) & [arXiv preprint](https://arxiv.org/pdf/2303.13809.pdf) for more details.
 
 ## Citation
 If you find this work helpful, please consider citing as follows:  
@@ -77,8 +77,8 @@ If you find this work helpful, please consider citing as follows:
 @article{Lu2023EAPrompt,
   title={Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT},
   author={Lu, Qingyu and Qiu, Baopu and Ding, Liang and Xie, Liping and Tao, Dacheng},
-  journal={ResearchGate preprint},
-  doi={https://doi.org/10.13140/RG.2.2.17706.08647},
+  journal={arXiv preprint},
+  url={https://arxiv.org/pdf/2303.13809.pdf},
   year={2023}
 }
 ```
