@@ -5,6 +5,12 @@ import backoff  # for exponential backoff
 from tqdm import tqdm
 
 
+OPENAI_MODEL_ENDPOINTS = {
+    'chat_completions': 'gpt-4, gpt-4-0314, gpt-4-32k, gpt-4-32k-0314, gpt-3.5-turbo, gpt-3.5-turbo-0301'.split(', '),
+    'text_completions': 'text-davinci-003, text-davinci-002, text-curie-001, text-babbage-001, text-ada-001'.split(', ')
+}
+
+
 def read_json(path):
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
@@ -25,42 +31,67 @@ def read_txt(path):
 
 
 @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
-def completions_with_backoff(**kwargs):
+def chat_completions_with_backoff(**kwargs):
     return openai.ChatCompletion.create(**kwargs)
+
+@backoff.on_exception(backoff.expo, openai.error.RateLimitError)
+def text_completions_with_backoff(**kwargs):
+    return openai.Completion.create(**kwargs)
 
 
 def main():
     
     parser = argparse.ArgumentParser('Command-line script to use EA prompting')
-    parser.add_argument('-k', type=str, required=True,
-                        help='api key') 
-    parser.add_argument('-m', type=str, required=True, 
-                        help='message path')
-    parser.add_argument('-t', type=float, default=0,
+    parser.add_argument('-m', '--model', type=str, required=True,
+                        help='model endpoint')
+    parser.add_argument('-k', '--key', type=str, required=True,
+                        help='api key')
+    parser.add_argument('-p', '--path', type=str, required=True, 
+                        help='prompt path')
+    parser.add_argument('-t', '--temperature', type=float, default=0,
                         help='temperature')
-    parser.add_argument('-o', type=str, default='response.json',
+    parser.add_argument('-o', '--output', type=str, default='response.json',
                         help='response path')
     args = parser.parse_args()
     
-    openai.api_key = args.k
-    messages = read_json(args.m)
+    openai.api_key = args.key
+    prompts = read_json(args.path)
 
     responses = []
 
-    for message in tqdm(messages, desc='Call ChatGPT'):
-        response = completions_with_backoff(
-            model = "gpt-3.5-turbo",
-            messages=message,
-            temperature=args.t,
-        )
-        responses.append(response["choices"][0]["message"]["content"])
-    save_json(responses, args.o)
+    if args.model.startswith('gpt-'):
+        assert args.model in OPENAI_MODEL_ENDPOINTS['chat_completions'], "please check openai model endpoint name!"
+        # call chatcompletion api:
+        for prompt in tqdm(prompts, desc=f"Call {args.model}"):
+            response = chat_completions_with_backoff(
+                model=args.model,
+                messages=prompt,
+                temperature=args.temperature,
+            )
+            responses.append(response["choices"][0]["message"]["content"])
+
+    elif args.model.startswith('text-'):
+        assert args.model in OPENAI_MODEL_ENDPOINTS['text_completions'], "please check openai model endpoint name!"
+        # call text completion api:
+        for prompt in tqdm(prompts, desc=f"Call {args.model}"):
+            response = text_completions_with_backoff(
+                model=args.model,
+                prompt=prompt,
+                temperature=args.temperature,
+                max_tokens=300,
+            )
+            responses.append(response["choices"][0]["text"])
+
+    else:
+        raise AssertionError("please check openai model endpoint name!")
+
+    save_json(responses, args.output)
 
 
 if __name__ == '__main__':
     main()
 
 
-# example: (replace 'api_key' with your own API key)
-# python CallChatGPT.py -m ./test/messages_error.json -t 0 -o ./test/responses_error.json -k api_key
-# python CallChatGPT.py -m ./test/messages_score.json -t 0 -o ./test/responses_score.json -k api_key
+# example:
+# python CallChatgpt.py -m gpt-3.5-turbo -p ./test/messages_error.json -t 0 -o ./test/responses_error.json -k <api.key>
+# python CallChatgpt.py -m gpt-3.5-turbo -p ./test/messages_score.json -t 0 -o ./test/responses_score.json -k <api.key>
