@@ -1,0 +1,4 @@
+Source: <SRC>
+Reference: <REF>
+Translation: <TGT>
+Please act as a translation evaluation metric that scores a translation between 0 to 100 based on the source and reference. Do not use existing metrics. 
