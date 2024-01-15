@@ -76,7 +76,7 @@ If you find this work helpful, please consider citing as follows:
 ```ruby
 @article{Lu2023EAPrompt,
   title={Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT},
-  author={Lu, Qingyu and Qiu, Baopu and Ding, Liang and Xie, Liping and Tao, Dacheng},
+  author={Lu, Qingyu and Qiu, Baopu and Ding, Liang and Zhang, Kanjian and Kocmi, Tom and Tao, Dacheng},
   journal={arXiv preprint},
   url={https://arxiv.org/pdf/2303.13809.pdf},
   year={2023}
