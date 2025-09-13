@@ -7,6 +7,8 @@
 **[2025-09]** 📝 We have *updated the README* to better highlight the main findings.  
 We are also revising the codebase for easier implementation, and will release additional results soon to support more reliable comparisons with subsequent works.
 
+**[2025-01]** 🎉 Our subsequent work: **MQM-APE**: *Toward High-Quality Error Annotation Predictors with Automatic Post-Editing in LLM Translation Evaluators* has been accepted to *COLING 2025*! [📄 Paper](https://aclanthology.org/2025.coling-main.374.pdf)
+
 **[2024-08]** 🎉 Our paper has been accepted to *ACL 2024 Findings*!  
 [📄 Paper](https://aclanthology.org/2024.findings-acl.520.pdf) · [🖼️ Poster](./sources/Poster-0805.pdf) 
 
