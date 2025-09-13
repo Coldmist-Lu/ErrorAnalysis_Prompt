@@ -51,7 +51,7 @@ We utilize the test set from the WMT22 shared tasks ([Freitag et al., 2022](http
 
 The task statistics are shown as follows:
 
-| Dataset | Language Pair | Segments | Systems |
+| Datasets | Language Pair | No. of Segments | No. of Systems |
 |---------|---------------|----------|---------|
 | WMT22   | En-De         | 2037     | 17      |
 |         | En-Ru         | 2037     | 17      |
