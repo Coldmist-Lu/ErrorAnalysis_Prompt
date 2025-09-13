@@ -36,8 +36,12 @@ Error Analysis Prompting (EAPrompt) is **two-step strategy** for using LLMs to a
 For the prompting setup, in **Step 1** (identifying errors), we adopt a *one-shot prompting* strategy. For each language pair, we use the same example to guide the model’s response in a consistent format. In **Step 2** (counting errors), we apply **direct prompting**, enabling the LLMs to count the number of errors. Finally, we compute the translation score by:
 
 <div align="center">
-    <img width="80%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/postprocess.png">
+    <img width="40%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/postprocess.png">
 </div>
+
+where $n_{major}$ and $n_{minor}$ denotes the number of major and minor errors respectively, while $w_{major}$ and $w_{minor}$ represent the severity weight assigned to major and minor errors. we follow [Lu et al. (2023)](https://aclanthology.org/2023.acl-long.324.pdf) to adopt a flexible scoring approach by fixing the $w_{minor} = 1$ while treating $w_{major}$ as a latent variable within EAPrompt.
+
+<!-- ! Optimal value are provided in ? -->
 
 <!-- ! Detailed implementation can be obtained in ? -->
 
@@ -59,10 +63,6 @@ For the three LLMs (Llama2-70b-Chat, Mixtral-8x7b-Instruct, and GPT-3.5-Turbo), 
 <!-- ! The response of the LLMs can be found in "[./data](./data/)". -->
 
 <!-- ! The evaluation scores are available in "[./data](./data/)", with a format consistent with the metric scores in [MTME](https://github.com/google-research/mt-metrics-eval). -->
-
-
-
-
 
 ## Results and Findings
 
