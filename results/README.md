@@ -74,4 +74,4 @@ Each JSON file contains the LLM’s corresponding outputs for the given queries,
 
 These files are provided for future analysis and comparison within this study.
 > Please note that for zh–en, the GPT-4 responses include only **30 samples** per system.
-The segment IDs corresponding to these samples can be found in **[gpt_random_sent_ids.json](./results/gpt_random_sent_ids.json)**.
+The segment IDs corresponding to these samples can be found in **[gpt_random_sent_ids.json](./gpt_random_sent_ids.json)**.
