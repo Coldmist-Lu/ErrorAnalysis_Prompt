@@ -1,8 +1,13 @@
-# EAPrompt: ErrorAnalysis Prompt for MT Evaluation in LLMs
+<h1 align="center">EAPrompt: Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models</h1>
 
-<b>Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models</b>. ([Arxiv](https://arxiv.org/pdf/2303.13809.pdf) · [ACL Paper](https://aclanthology.org/2024.findings-acl.520.pdf))
+<p align="center">
+📄 <a href="https://aclanthology.org/2024.findings-acl.520.pdf"><b>Paper</b></a> |
+📚 <a href="https://x.com/SiriusLu1/status/1823056809223168160"><b>Twitter/X</b></a>
+</p>
 
-**TL;DR:** We propose a new prompting method - "Error Analysis Prompting" for translation evaluation. By combining Chain-of-Thoughts and Error Analysis, this technique emulates human evaluation framework MQM and produces explainable and reliable MT evaluations.
+<p align="center">
+    <b>TL;DR</b>: We propose a new prompting method - "Error Analysis Prompting" for translation evaluation. By combining Chain-of-Thoughts and Error Analysis, this technique emulates human evaluation framework MQM and produces explainable and reliable MT evaluations.
+</p>
 
 **[2025-10]** 🔗 We release the updated [codebase](./EAPrompt) for easier implementation, and release [additional results](./results) to support the community.
 
@@ -13,14 +18,14 @@
 **[2024-08]** 🎉 Our paper has been accepted to *ACL 2024 Findings*!  
 [📄 Paper](https://aclanthology.org/2024.findings-acl.520.pdf) · [🖼️ Poster](./sources/Poster-0805.pdf) 
 
-This repository releases the test sets, scores, and prompting approach used for replicating the study.
+This repository releases the implementation of our proposed approach, the test data, queries and responses of LLM used for replicating the study.
 
-## Abstract
+<h2 align="center">Abstract</h2>
 
 Generative large language models (LLMs), e.g., ChatGPT, have demonstrated remarkable proficiency across several NLP tasks, such as machine translation, text summarization. Recent research ([Kocmi and Federmann, 2023](https://arxiv.org/pdf/2302.14520.pdf)) has shown that utilizing LLMs for assessing the quality of machine translation (MT) achieves state-of-the-art performance at the system level but *performs poorly at the segment level*. To further improve the performance of LLMs on MT quality assessment, we conduct an investigation into several prompting designs, and propose a new prompting method called **Error Analysis Prompting** (**EAPrompt**) by combining Chain-of-Thoughts ([Wei et al., 2022](https://arxiv.org/pdf/2201.11903.pdf)) and Error Analysis ([Lu et al., 2022](https://aclanthology.org/2023.acl-long.324.pdf)). This technique emulates the commonly accepted human evaluation framework - Multidimensional Quality Metrics ([MQM, Freitag et al. (2021)](https://aclanthology.org/2021.tacl-1.87.pdf)) and *produces explainable and reliable MT evaluations at both the system and segment level*. Experimental Results from WMT22 metrics shared
 task validate the effectiveness of EAPrompt on various LLMs, with different structures. Further analysis confirms that EAPrompt effectively distinguishes major errors from minor ones, while also sharing a similar distribution of the number of errors with MQM. These findings highlight the potential of EAPrompt as a human-like evaluator prompting technique for MT evaluation.
 
-## Error Analysis Prompting
+<h2 align="center">Error Analysis Prompting</h2>
 
 Error Analysis Prompting (EAPrompt) is **two-step strategy** for using LLMs to assess translation quality. The model is prompted to:
 
@@ -42,7 +47,7 @@ For the prompting setup, in **Step 1** (identifying errors), we adopt a *one-sho
 
 where $n_{major}$ and $n_{minor}$ denotes the number of major and minor errors respectively, while $w_{major}$ and $w_{minor}$ represent the severity weight assigned to major and minor errors. we follow [Lu et al. (2023)](https://aclanthology.org/2023.acl-long.324.pdf) to adopt a flexible scoring approach by fixing the $w_{minor} = 1$ while treating $w_{major}$ as a latent variable within EAPrompt.
 
-## Data and Evaluations
+<h2 align="center">Data and Evaluations</h2>
 
 We utilize the test set from the WMT22 shared tasks ([Freitag et al., 2022](https://aclanthology.org/2022.wmt-1.2.pdf)) in English-German (En-De), English-Russian (En-Ru), and Chinese-English (Zh-En) across different domains - conversational, e-commerce, news, and social. 
 
@@ -59,7 +64,7 @@ For the three LLMs (Llama2-70b-Chat, Mixtral-8x7b-Instruct, and GPT-3.5-Turbo), 
 
 The querys and responses of the LLMs can be found in "[results](./results/)".
 
-## Results and Findings
+<h2 align="center">Results and Findings</h2>
 
 1. **EAPrompt significantly enhances the performance of LLMs at the system level**. Notably, prompting *GPT-3.5-Turbo* with EAPrompt outperforms all other metrics and prompting strategies, establishing a new state-of-the-art.
 
@@ -94,7 +99,7 @@ The querys and responses of the LLMs can be found in "[results](./results/)".
 
 Please refer to our [arXiv preprint](https://arxiv.org/pdf/2303.13809.pdf) or [ACL Paper](https://aclanthology.org/2024.findings-acl.520.pdf) for more details.
 
-## Citation
+<h2 align="center">Citation</h2>
 If you find this work helpful, please consider citing as follows:  
 
 ```ruby
