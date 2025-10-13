@@ -4,8 +4,9 @@
 
 **TL;DR:** We propose a new prompting method - "Error Analysis Prompting" for translation evaluation. By combining Chain-of-Thoughts and Error Analysis, this technique emulates human evaluation framework MQM and produces explainable and reliable MT evaluations.
 
+**[2025-10]** 🔗 We release the updated [codebase](./EAPrompt) for easier implementation, and release [additional results](./results) to support the community.
+
 **[2025-09]** 📝 We have *updated the README* to better highlight the main findings.  
-We are also revising the codebase for easier implementation, and will release additional results soon to support more reliable comparisons with subsequent works.
 
 **[2025-01]** 🎉 Our subsequent work: **MQM-APE**: *Toward High-Quality Error Annotation Predictors with Automatic Post-Editing in LLM Translation Evaluators* has been accepted to *COLING 2025*! [📄 Paper](https://aclanthology.org/2025.coling-main.374.pdf)
 
@@ -41,10 +42,6 @@ For the prompting setup, in **Step 1** (identifying errors), we adopt a *one-sho
 
 where $n_{major}$ and $n_{minor}$ denotes the number of major and minor errors respectively, while $w_{major}$ and $w_{minor}$ represent the severity weight assigned to major and minor errors. we follow [Lu et al. (2023)](https://aclanthology.org/2023.acl-long.324.pdf) to adopt a flexible scoring approach by fixing the $w_{minor} = 1$ while treating $w_{major}$ as a latent variable within EAPrompt.
 
-<!-- ! Optimal value are provided in ? -->
-
-<!-- ! Detailed implementation can be obtained in ? -->
-
 ## Data and Evaluations
 
 We utilize the test set from the WMT22 shared tasks ([Freitag et al., 2022](https://aclanthology.org/2022.wmt-1.2.pdf)) in English-German (En-De), English-Russian (En-Ru), and Chinese-English (Zh-En) across different domains - conversational, e-commerce, news, and social. 
@@ -60,9 +57,7 @@ The task statistics are shown as follows:
 
 For the three LLMs (Llama2-70b-Chat, Mixtral-8x7b-Instruct, and GPT-3.5-Turbo), we evaluate a total of 106,758 segments drawn from 54 MT systems. For GPT-4, we restrict the evaluation to Chinese–English, using 30 randomly selected segments per MT system, for a total of 600 samples ("WMT22-Subset").
 
-<!-- ! The response of the LLMs can be found in "[./data](./data/)". -->
-
-<!-- ! The evaluation scores are available in "[./data](./data/)", with a format consistent with the metric scores in [MTME](https://github.com/google-research/mt-metrics-eval). -->
+The querys and responses of the LLMs can be found in "[results](./results/)".
 
 ## Results and Findings
 
@@ -96,8 +91,6 @@ For the three LLMs (Llama2-70b-Chat, Mixtral-8x7b-Instruct, and GPT-3.5-Turbo), 
 </div>
 
 6. We provide an alternate approach of counting errors by leveraging **Regular Expressions, further optimizing the inference costs**.
-
-  <!-- > !how to do so? -->
 
 Please refer to our [arXiv preprint](https://arxiv.org/pdf/2303.13809.pdf) or [ACL Paper](https://aclanthology.org/2024.findings-acl.520.pdf) for more details.
 
