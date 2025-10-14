@@ -64,6 +64,52 @@ For the three LLMs (Llama2-70b-Chat, Mixtral-8x7b-Instruct, and GPT-3.5-Turbo), 
 
 The querys and responses of the LLMs can be found in "[results](./results/)".
 
+<h2 align="center">EAPrompt Implementation</h2>
+
+The main implementation is provided in [./EAPrompt](./EAPrompt/).
+
+**🧩 Requirements**
+
+Since EAPrompt is a prompting-based technique, it does not require any additional dependencies.
+The only necessary requirement is to have chat access to a large language model (LLM) — for instance:
+the OpenAI API for GPT-series models (see the demo in [./EAPrompt/inference.py](./EAPrompt/inference.py)), or the Transformers library for open-access models.
+
+**🗂️ Prompt Types**
+
+All prompt types used in the study are provided for replication. We adopt a structured identifier format **\{STEP\}\_\{LANG\}\_\{DEMO\}\_\{IS_REF\}** to denote each prompt type:
+
+- **STEP** — Indicates the prompting style:  
+  - `"ERROR"` for error demonstration;  
+  - `"SINGLESTEP"` for combining error and count responses into a single step.
+
+- **LANG** — Represents the language pair in uppercase (e.g., `"ENDE"` for English–German), since contextual examples differ across language pairs.
+
+- **DEMO** — Specifies the demonstration granularity:  
+  - `"DETAILED"` for full demonstration;  
+  - `"ITEMIZED"` for stepwise, itemized demonstration.
+
+- **IS_REF** — Defines whether the prompt uses reference translation:  
+  - `"SRC"` for **reference-free** evaluation (source only);  
+  - `"REF"` for **reference-based** evaluation.
+
+> Note: For the counting step, we use a simple identifier "COUNT". No additional keywords are required.
+
+According to our ablation experiments, we recommend using the prompt type **ERROR\_\{LANG\}\_ITEMIZED\_\{IS_REF\}** as the default configuration, For example: ERROR_ENDE_ITEMIZED_SRC
+
+According to our ablation experiments, we recommend **ERROR\_\{LANG\}\_ITEMIZED\_\{IS_REF\}** as prompt type, e.g. ERROR_ENDE_ITEMIZED_SRC. 
+
+**🚀 Generating Queries & Responses**
+
+To evaluate a list of translation segments, you can directly use the method `generate_queries_batch` from the EAPrompt class to obtain the corresponding prompts.
+
+For large-scale evaluation across multiple MT systems, we provide two example scripts for batch processing:
+
+* [./EAPrompt/queries_generate.py](./EAPrompt/queries_generate.py) — for generating queries in batch.
+* [./EAPrompt/responses_generate.py](./EAPrompt/responses_generate.py) — for generating and collecting model responses.
+
+These scripts demonstrate the complete workflow for evaluating entire datasets efficiently.
+
+
 <h2 align="center">Results and Findings</h2>
 
 1. **EAPrompt significantly enhances the performance of LLMs at the system level**. Notably, prompting *GPT-3.5-Turbo* with EAPrompt outperforms all other metrics and prompting strategies, establishing a new state-of-the-art.
